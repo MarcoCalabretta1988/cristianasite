@@ -6,14 +6,21 @@ export default {
 </script>
 
 <template>
-    <header class="text-warning">
+    <header class="text-success">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container-fluid">
-                <router-link :to="{ name: 'home' }" class="nav-link">Cristiana Ciccarelli | </router-link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="d-flex">
+                    <!-- Logo -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <router-link :to="{ name: 'home' }" class="nav-link px-5">
+                        <h2>Cristiana Ciccarelli</h2>
+                    </router-link>
+
+                </div>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!-- Nav Links -->
                     <ul class="navbar-nav ">
@@ -34,4 +41,8 @@ export default {
     </header>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+    height: 60px;
+}
+</style>
