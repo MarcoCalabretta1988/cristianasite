@@ -7,7 +7,7 @@ export default {
 
 <template>
     <section id="contacts" class="py-5">
-        <div class="container">
+        <div class="container contact-content">
             <h1 class="text-success my-3">- Contacts -</h1>
             <div class="row row-cols-2">
                 <div class="col">
@@ -31,8 +31,18 @@ export default {
 
 <style lang="scss" scoped>
 #contacts {
-    background-color: rgba($color: #000000, $alpha: 0.6);
-    text-align: center;
+
+    background-image: url('../assets/img/bg-contact.jpg');
+    background-size: cover;
+
+    min-height: calc(100vh - 72px);
+
+    .contact-content {
+
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        text-align: center;
+        padding: 50px 0;
+    }
 
     ul {
         font-size: 30px;

@@ -45,9 +45,14 @@ export default {
 header {
     font-family: 'Dancing Script', cursive;
     text-shadow: 2px 2px black;
+    border-bottom: 2px solid green;
 }
 
 img {
     height: 60px;
+}
+
+ul {
+    font-size: 20px;
 }
 </style>

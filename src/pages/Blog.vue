@@ -101,7 +101,7 @@ export default {
 
 <style lang="scss" scoped>
 #blog {
-    background-image: url('../assets/img/background1.jpg');
+    background-image: url('../assets/img/bg-blog.jpg');
     background-size: cover;
 
     min-height: calc(100vh - 72px);

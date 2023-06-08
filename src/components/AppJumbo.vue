@@ -57,18 +57,18 @@ export default {
 </script>
 
 <template>
-    <section id="jumbotron" class="py-4">
-        <div class="container">
+    <section id="jumbotron" class="py-3">
 
 
-            <div class="gallery" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
-                <figure v-for="(pic, i) in pictures" :class="{ 'active': currentIndex === i }">
-                    <img :src="buildImagePath(pic.image)" :alt="pic.title">
-                    <h1>{{ pic.title }}</h1>
 
-                </figure>
-            </div>
+        <div class="gallery" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
+            <figure v-for="(pic, i) in pictures" :class="{ 'active': currentIndex === i }">
+                <img :src="buildImagePath(pic.image)" :alt="pic.title">
+                <h1>{{ pic.title }}</h1>
+
+            </figure>
         </div>
+
     </section>
 </template>
 
@@ -79,16 +79,16 @@ export default {
 
     .gallery {
         height: 450px;
-        width: 1300px;
+        width: 100vw;
         overflow: hidden;
         position: relative;
         color: white;
-        border-radius: 30px;
+
 
 
 
         img {
-            width: 1300px;
+            width: 100vw;
             height: 450px;
             object-fit: cover;
         }
