@@ -18,4 +18,9 @@ export default {
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#home-page {
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 2px 2px black;
+}
+</style>

@@ -42,6 +42,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+header {
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px black;
+}
+
 img {
     height: 60px;
 }

@@ -7,9 +7,9 @@ export default {
 
 <template>
     <div class="loader-overlay">
-        <div class="spinner-border text-warning" role="status">
+        <div class="spinner-border text-success" role="status">
         </div>
-        <h1 class="text-warning mx-5"><font-awesome-icon icon="fa-solid fa-hourglass-half" class="icon fa-2x" /> Loading....
+        <h1 class="text-success mx-5"><font-awesome-icon icon="fa-solid fa-hourglass-half" class="icon fa-2x" /> Loading....
         </h1>
     </div>
 </template>

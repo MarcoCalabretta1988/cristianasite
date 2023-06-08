@@ -2,13 +2,14 @@
 export default {
     name: 'Blog',
     data: () => ({})
+
 }
 </script>
 
 <template>
     <section id="blog">
         <div class="container blog-content">
-            <h1 class="text-success py-3">- Blog -</h1>
+            <h1 class="text-success py-3 ">- Blog -</h1>
 
             <div class="row row-col-4 g-5">
                 <div class="col">
@@ -114,15 +115,21 @@ export default {
     .card {
 
         background-color: rgba($color: #000000, $alpha: 0.7);
+        transition: background-color 1s, color 2s, border 1s;
         height: 400px;
+
 
         img {
             height: 200px;
+
         }
 
         &:hover {
             background-color: rgba($color: #ffffff, $alpha: 0.6);
-            color: black;
+            color: green;
+            border: 5px solid green;
+            text-shadow: 1px 1px black;
+
         }
     }
 }

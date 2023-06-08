@@ -59,6 +59,8 @@ export default {
 <template>
     <section id="jumbotron" class="py-4">
         <div class="container">
+
+
             <div class="gallery" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
                 <figure v-for="(pic, i) in pictures" :class="{ 'active': currentIndex === i }">
                     <img :src="buildImagePath(pic.image)" :alt="pic.title">
@@ -83,6 +85,8 @@ export default {
         color: white;
         border-radius: 30px;
 
+
+
         img {
             width: 1300px;
             height: 450px;
@@ -97,17 +101,21 @@ export default {
             font-size: 50px;
         }
 
-    }
+
+        figure {
+
+            display: none;
 
 
-    figure {
 
-        display: none;
-    }
+        }
 
-    figure.active {
 
-        display: inline-block;
+
+        figure.active {
+
+            display: inline-block;
+        }
     }
 
 
